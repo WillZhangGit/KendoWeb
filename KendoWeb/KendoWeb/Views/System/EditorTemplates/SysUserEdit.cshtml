@@ -1,0 +1,43 @@
+﻿@model KendoWeb.Model.DTO.SysUserDTO
+
+<div class="editor-label">
+    @Html.Label("名称")
+</div>
+<div class="editor-field">
+    @Html.Kendo().TextBoxFor(model => model.Name)
+</div>
+
+<div class="editor-label">
+    @Html.Label("描述")
+</div>
+<div class="editor-field">
+    @Html.Kendo().TextBoxFor(model => model.Description)
+</div>
+
+<div class="editor-label">
+    @Html.Label("密码")
+</div>
+<div class="editor-field">
+    @Html.Kendo().TextBoxFor(model => model.Password)
+</div>
+
+<div class="editor-label">
+    @Html.Label("角色")
+</div>
+<div class="editor-field">
+    @(Html.Kendo().MultiSelect()
+          .Name("RoleList")
+          .DataTextField("Name")
+          .DataValueField("Id")
+          .Placeholder("--请选择--")
+          .AutoBind(false)
+          .DataSource(source =>
+          {
+              source.Read(read =>
+              {
+                  read.Action("Role_List", "System");
+              })
+              .ServerFiltering(true);
+          })
+    )
+</div>

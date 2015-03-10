@@ -1,0 +1,27 @@
+﻿@using KendoWeb.Helper
+@{
+    Layout = null;
+    var ListMenu = ViewBag.ListMenu as List<KendoWeb.Model.DTO.MenuDTO>;
+    var GroupsMenus = ListMenu.GroupBy(g => g.MenuGroupName);
+}
+
+@{
+    foreach (var GroupMenus in GroupsMenus)
+    {
+        <li>
+            <a href="javascript:;">
+                <i class="icon-home"></i>
+                <span class="title">@GroupMenus.Key</span>
+                <span class="selected"></span>
+                <span class="arrow open"></span>
+            </a>
+            <ul class="sub-menu">
+                @for (int i = 0; i < GroupMenus.Count(); i++)
+                {
+                    var Menu = GroupMenus.ElementAt(i);
+                    @Html.NewMenuLink(Menu.Name, Menu.Action, Menu.Controller)
+                }
+            </ul>
+        </li>
+    }
+}

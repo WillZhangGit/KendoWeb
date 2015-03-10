@@ -1,0 +1,36 @@
+﻿@model KendoWeb.Model.DTO.RoleDTO
+
+<div class="editor-label">
+    @Html.Label("名称")
+</div>
+<div class="editor-field">
+    @Html.Kendo().TextBoxFor(model => model.Name)
+</div>
+
+<div class="editor-label">
+    @Html.Label("描述")
+</div>
+<div class="editor-field">
+    @Html.Kendo().TextBoxFor(model => model.Description)
+</div>
+
+<div class="editor-label">
+    @Html.Label("权限")
+</div>
+<div class="editor-field">
+    @(Html.Kendo().MultiSelect()
+          .Name("MenuList")
+          .DataTextField("Name")
+          .DataValueField("Id")
+          .Placeholder("--请选择--")
+          .AutoBind(false)
+          .DataSource(source =>
+          {
+              source.Read(read =>
+              {
+                  read.Action("Menu_List", "System");
+              })
+              .ServerFiltering(true);
+          })
+    )
+</div>

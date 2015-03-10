@@ -1,0 +1,49 @@
+﻿@model KendoWeb.Model.DTO.MenuDTO
+
+<div class="editor-label">
+    @Html.Label("名称")
+</div>
+<div class="editor-field">
+    @Html.Kendo().TextBoxFor(model => model.Name)
+</div>
+
+<div class="editor-label">
+    @Html.Label("控制器")
+</div>
+<div class="editor-field">
+    @Html.Kendo().TextBoxFor(model => model.Controller)
+</div>
+
+<div class="editor-label">
+    @Html.Label("功能")
+</div>
+<div class="editor-field">
+    @Html.Kendo().TextBoxFor(model => model.Action)
+</div>
+
+<div class="editor-label">
+    @Html.Label("排序")
+</div>
+<div class="editor-field">
+    @Html.Kendo().NumericTextBoxFor(model => model.SortOrder)
+</div>
+
+<div class="editor-label">
+    @Html.Label("分组")
+</div>
+<div class="editor-field">
+    @(Html.Kendo().DropDownList()
+                .Name("MenuGroupId")
+                .DataTextField("Name")
+                .DataValueField("Id")
+                .SelectedIndex(1)
+                .OptionLabel("--请选择类型--")
+                .DataSource(source =>
+                {
+                    source.Read(read =>
+                    {
+                        read.Action("MenuGroup_List", "System");
+                    });
+                })
+    )
+</div>

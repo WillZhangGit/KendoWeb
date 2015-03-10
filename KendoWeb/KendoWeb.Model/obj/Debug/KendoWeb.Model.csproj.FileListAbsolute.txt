@@ -1,0 +1,9 @@
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\bin\Debug\KendoWeb.Model.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\bin\Debug\KendoWeb.Model.pdb
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\bin\Debug\Mindscape.LightSpeed.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\bin\Debug\Mindscape.LightSpeed.Linq.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\bin\Debug\Mindscape.LightSpeed.xml
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\bin\Debug\Mindscape.LightSpeed.Linq.xml
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\obj\Debug\KendoWeb.Model.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\obj\Debug\KendoWeb.Model.pdb
+E:\learn\Kendo\KendoWeb\KendoWeb.Model\obj\Debug\KendoWeb.Model.csprojResolveAssemblyReference.cache

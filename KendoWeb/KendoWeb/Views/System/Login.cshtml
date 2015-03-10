@@ -1,0 +1,21 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <form method='post'>
+            <label>用户名：</label><input id="Name" name="Name" type="text" /><label>密码：</label><input id="Password" name="Password" type="password" />
+            <button type="submit">登录</button> @ViewBag.Error
+        </form>
+    </div>
+</body>
+</html>

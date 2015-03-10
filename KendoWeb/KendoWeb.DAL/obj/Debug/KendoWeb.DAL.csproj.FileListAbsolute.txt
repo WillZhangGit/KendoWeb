@@ -1,0 +1,13 @@
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\KendoWeb.DAL.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\KendoWeb.DAL.pdb
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\KendoWeb.Model.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\LightSpeed.Repository.Base.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\Mindscape.LightSpeed.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\Mindscape.LightSpeed.Linq.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\KendoWeb.Model.pdb
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\LightSpeed.Repository.Base.pdb
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\Mindscape.LightSpeed.xml
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\bin\Debug\Mindscape.LightSpeed.Linq.xml
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\obj\Debug\KendoWeb.DAL.csprojResolveAssemblyReference.cache
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\obj\Debug\KendoWeb.DAL.dll
+E:\learn\Kendo\KendoWeb\KendoWeb.DAL\obj\Debug\KendoWeb.DAL.pdb

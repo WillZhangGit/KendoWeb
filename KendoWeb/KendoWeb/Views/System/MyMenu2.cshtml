@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+    var ListMenu = ViewBag.ListMenu as List<KendoWeb.Model.DTO.MenuDTO>;
+    var GroupsMenus = ListMenu.GroupBy(g => g.MenuGroupName);
+}
+
+@(Html.Kendo().PanelBar()
+        .Name("PanelBar")
+        .Items(panelbar =>
+        {
+            panelbar.Add().Text("主页").Action("Index", "Home");
+            foreach (var GroupMenus in GroupsMenus)
+            {
+                panelbar.Add().Text(GroupMenus.Key)
+                    .Expanded(true)
+                    .Items(baseball =>
+                    {
+                        for (int i = 0; i < GroupMenus.Count(); i++)
+                        {
+                            var Menu = GroupMenus.ElementAt(i);
+                            baseball.Add().Text(Menu.Name).Action(Menu.Action, Menu.Controller);
+                        }
+                    });
+            }
+        })
+)
